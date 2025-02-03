@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Adventure</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#Home">Home</a></li>
+            <li><a href="#places">Places</a></li>
+            <li><a href="#Tours">Tours</a></li>
+            <li><a href="#Explore">Explore</a></li>
+            <li><a href="#About">About</a></li>
+            <li class="ctn"><a href="#contact">contact</a></li>
+            
+        </ul>
+        <img src="menu.png" alt="" class="menu-btn">
+    </nav>
+
+
+
+
+
+
+    <header id="Home">
+        <div class="header-content">
+            <h2 id="el1">Explore the Colorful world</h2>
+            <div class="line"></div>
+            <h1 id="el6">A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+
+    <div class="slider" id="places">
+        <figure>
+            <div class="slide">
+                <!-- <h1>Goa</h1> -->
+                <img src="goa.jpg" alt="">
+            </div>
+            <div class="slide">
+                <!-- <h1>japan</h1> -->
+                <img src="japan.jpg" alt="">
+            </div>
+            <div class="slide">
+                <!-- <h1>Bangkok</h1> -->
+                <img src="bangkok.webp" alt="">
+            </div>
+            <div class="slide">
+                <!-- <h1>Buddha Temple</h1> -->
+                <img src="buddha.webp" alt="">
+            </div>
+        </figure>
+    </div>
+
+
+
+    <!-- events -->
+     <section class="events" id="Tours">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="bus.jpg" alt="" id="el2" height="250vh" width="300vw" style="border-radius: 50%;">
+                <h4>Everest Camp Treak</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptatum aliquid ab mollitia quas amet quod, iure dignissimos facere,
+                     molestiae consequuntur explicabo enim tempore dolorum quisquam vel ipsa dolores asperiores?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="event 2.jpg" alt="" id="el3" height="250vh" width="300vw" style="border-radius: 50%;">
+                <h4>Working Holidays</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam assumenda atque beatae fuga perferendis, 
+                    excepturi enim minima facilis minus recusandae a tenetur modi itaque explicabo consectetur rem debitis in?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+     </section>
+
+     <section class="explore" id="Explore">
+        <div class="explore-content">
+            <h1 id="el4">Explore The World</h1>
+            <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae fuga aperiam 
+            ex minima optio ut vitae cum odio dolore, maiores ipsam expedita velit a veritatis omnis quasi rem reiciendis. Sint.</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+     </section>
+
+
+     <section class="tours" id="About">
+        <div class="row">
+            <div class="col content-col">
+                <h1 id="el5">Upcoming tors and destination</h1>
+                <div class="line"></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa sit corrupti sint quasi, 
+                    sapiente commodi dolorem quaerat at beatae ut maxime repellat qui quibusdam praesentium. Nam ex neque aut earum.</p>
+                    <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="tour 1.jpg" alt="" id="img1" height="250vh" width="300vw">
+                    <img src="tour 2.png" alt="" id="img2" height="250vh" width="300vw">
+                    <img src="tour 3.jpg" alt="" id="img3" height="250vh" width="300vw">
+                    <img src="tour 4.jpg" alt="" id="img4" height="250vh" width="300vw">
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section class="footer" id="contact">
+        <p>123 Fifth Avenue, Ny 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+        <p>Copyright 2020 Outdoor Adventure</p>
+     </section>
+
+    
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+
+        })
+    </script>
+</body>
+</html>

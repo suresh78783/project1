@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .navbar{
+            background-color: lightgrey;
+            height: 10vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-logo-conatainer{
+            height: 10vh;
+            width: 10vw;
+        }
+        .navbar-logo{
+            height: 10vh;
+            width: 10vw;
+            border-radius: 50%;
+        }
+        #some{
+            display: none;
+        }
+        .menu-bars{
+        display: none;
+        }
+        .container>ol{
+            display: flex;
+            gap: 15px;
+        }
+        .container>ol>a{
+            text-decoration: none;
+            list-style-type: none;
+            color: darkorange;
+        }
+        .cancel-bars{
+            display: none;
+        }
+        .container>ol>a:hover{
+            color: #ffffff;
+            background-color: black;
+        }
+        @media screen and (min-width:100px) and (max-width:768px) {
+         
+            .menu-bars{
+        display: block;
+        }
+        #some{
+            display: none;
+        }
+        .container{
+            display: none;
+        }
+        .container>ol{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            position: absolute;
+            top: 60px;
+            left: 0px;
+            width: 100%;
+            background-color: lightsalmon;
+            padding: 12px;
+        }
+        .container>ol>a{
+            color: darkblue;
+        }
+        #some:checked ~ .container{
+            display: block;
+        }
+        #some:checked ~ .menu-bars{
+            display: none;
+        }
+        .cancel-bars{
+            display: none;
+        }
+        #some:checked ~ .cancel-bars{
+            display: block;
+            position: absolute;
+            right: 3px;
+        }
+    }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo-conatainer"><img src="https://i.pinimg.com/550x/6b/3c/a6/6b3ca669d769b0eaf706eac8b1d5d042.jpg" class="navbar-logo" alt="navbar-logo"></div>
+        <input type="checkbox" id="some">
+        <label for="some" class="menu-bars">
+            <ion-icon name="menu-outline"></ion-icon>
+        </label>
+        <label for="some" class="cancel-bars">
+            <ion-icon name="close-outline"></ion-icon>
+        </label>
+        <div class="container">
+            <ol>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>About</li></a>
+                <a href=""><li>Features</li></a>
+                <a href=""><li>Footer</li></a>
+            </ol>
+        </div>
+    </nav>
+</body>
+</html>

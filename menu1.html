@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+     <style>
+        /* Basic styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Hamburger Menu (hidden by default) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+}
+
+/* Media Query for screens 768px or smaller */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar.active .nav-links {
+        display: flex;
+    }
+}
+
+/* Media Query for screens 480px or smaller */
+@media screen and (max-width: 480px) {
+    .navbar .logo {
+        font-size: 1.2em;
+    }
+
+    .nav-links a {
+        font-size: 0.9em;
+    }
+}
+
+     </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Website</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span>&#9776;</span>
+            </div>
+        </nav>
+    </header>
+
+</body>
+</html>
